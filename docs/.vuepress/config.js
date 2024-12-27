@@ -22,38 +22,34 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
-      // {
-      //   text: '指南', link: '/pages/a2f161/', items: [
-      //     { text: '主题初衷与诞生', link: '/pages/52d5c3/' },
-      //     { text: '介绍', link: '/pages/a2f161/' },
-      //     { text: '快速上手', link: '/pages/793dcb/' },
-      //     { text: '目录结构', link: '/pages/2f674a/' },
-      //     { text: '核心配置和约定', link: '/pages/33d574/' },
-      //     { text: '自动生成front matter', link: '/pages/088c16/' },
-      //     { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
-      //     { text: 'Markdown 中使用组件', link: '/pages/197691/' },
-      //     {
-      //       text: '相关文章', items: [
-      //         { text: '使目录栏支持h2~h6标题', link: '/pages/8dfab5/' },
-      //         { text: '如何让你的笔记更有表现力', link: '/pages/dd027d/' },
-      //         { text: '批量操作front matter工具', link: '/pages/2b8e22/' },
-      //         { text: '部署', link: '/pages/0fc1d2/' },
-      //         { text: '关于写文章和H1标题', link: '/pages/9ae0bd/' },
-      //         { text: '关于博客搭建与管理', link: '/pages/26997d/' },
-      //         { text: '在线编辑和新增文章的方法', link: '/pages/c5a54d/' },
-      //       ]
-      //     }
-      //   ]
-      // },
-
       {
-        text: '文章',
-        link: '/pages/259a4b/'
+        text: '首页',
+        link: '/'
       },
-      // { text: '案例', link: '/pages/5d571c/' },
-      // { text: '问答', link: '/pages/9cc27d/' },
-      { text: '联系我', link: '/pages/1b12ed/' },
+      {
+        text: 'Java',
+        link: '/pages/7eb391/'
+      },
+      {
+        text: 'Go',
+        link: '/pages/6b08ba/'
+      },
+      {
+        text: '数据库',
+        link: '/pages/b54db9/'
+      },
+      {
+        text: '408',
+        link: '/pages/407bff/'
+      },
+      {
+        text: '其他',
+        link: '/pages/ad5a8e/'
+      },
+      {
+        text: '踩坑',
+        link: '/pages/65cd6f/'
+      },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -89,7 +85,7 @@ module.exports = {
     pageButton : false,
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
       name: '何', // 必需
-      href: 'https://github.com/2382546457' // 可选的
+      href: 'https://github.com/kikihhe' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -102,7 +98,7 @@ module.exports = {
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/2382546457'
+          link: 'https://github.com/kikihhe'
         },
         {
           iconClass: 'icon-erji',
@@ -145,12 +141,19 @@ module.exports = {
     //   ]
     // }],
 
+    // [
+    //   'vuepress-plugin-baidu-tongji', // 百度统计
+    //   {
+    //     hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
+    //   }
+    // ],
+
     [
-      'vuepress-plugin-baidu-tongji', // 百度统计
+      '@vuepress/google-analytics', // 谷歌统计
       {
-        hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
+        'ga': 'G-755L6HKEPN' // UA-00000000-0
       }
-    ],
+    ]
 
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
