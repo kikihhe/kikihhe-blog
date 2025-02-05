@@ -35,6 +35,10 @@ module.exports = {
         link: '/pages/6b08ba/'
       },
       {
+        text: 'K8S',
+        link: '/pages/dd255e/'
+      },
+      {
         text: '数据库',
         link: '/pages/b54db9/'
       },
